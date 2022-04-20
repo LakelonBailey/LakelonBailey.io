@@ -1,8 +1,8 @@
 # lakelonbailey.io
 
 ## Website Purposes
-* LakelonBailey.com demonstrates my skill progression in web development
-* LakelonBailey.com displays my professional and academic portfolio, as well as some insight into myself and my interests
+* LakelonBailey.io demonstrates my skill progression in web development
+* LakelonBailey.io displays my professional and academic portfolio, as well as some insight into myself and my interests
 
 ## Website
 https://lakelonbailey.github.io/lakelonbailey
