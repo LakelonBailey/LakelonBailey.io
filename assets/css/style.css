@@ -1,7 +1,131 @@
+
+
+
 * {
-    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+body {
+    background-image: url(../images/background2.jpeg);
+    background-size: cover;
+}
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+    background-color: rgba(120, 29, 66, .8)
+}
+header a {
+    text-decoration: none;
+    color: var(--eggshell);
+}
+
+header nav {
+    flex: 1;
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+.primary-section {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(241, 183, 58, 0.5);
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .75);
+}
+
 .hero {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.hero-img {
+    flex: 1;
+    background-image: url(../images/ProfilePic.png);
+    background-size: cover;
+    background-position: center top;
+}
+.hero-img img {
+    position: relative;
+    top: 80%;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex: 3;
+}
+.about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.about p {
+    flex: 4;
+}
+
+.interests {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero-info h2 {
+    width: 60%;
+    margin: 8px auto;
+    text-align: center;
+    border-bottom: 2px solid #A3423C;
+    color: black;
+}
+
+
+.interest {
+    flex: 1;
+    margin: 8px;
+    padding: 8px;
+    min-width: 300px;
+    display: flex;
+    background: rgba(255, 223, 203, .5);
+    border-radius: 30px;
+}
+
+.interest-img{
+    flex: 1;
+    margin: 0 8px;
+    max-width: 40px;
+}
+.interest-text {
+    flex: 2;
+    margin: auto;
+    text-align: left;
+    padding: 0 20px;
 }
