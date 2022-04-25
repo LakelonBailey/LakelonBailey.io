@@ -27,11 +27,13 @@ header {
 }
 header a {
     text-decoration: none;
-    color: var(--eggshell);
+    color: black;
 }
-
-header nav {
+header h1 {
     flex: 1;
+}
+header nav {
+    flex: 2;
     margin: 7px 0;
 }
 
@@ -48,12 +50,30 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+
+.section-box {
+    width: 100%;
+    margin: 0 auto;
+}
+.section-title {
+    text-align: center;
+    width: 25%;
+    background: rgb(207,182,166);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .75);
+    padding: 12px;
+    margin-left: 2.5%;
+    position: relative;
+    top: 20px;
+
+}
 .primary-section {
-    margin: 20px auto;
-    padding: 10px;
+    margin: auto auto;
+    padding: 40px;
     background-color: rgba(241, 183, 58, 0.5);
     width: 90%;
     box-shadow: 0 0 20px rgba(0, 0, 0, .75);
+    
 }
 
 .hero {
@@ -68,12 +88,13 @@ header nav ul li a {
     background-image: url(../images/ProfilePic.png);
     background-size: cover;
     background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .hero-img img {
-    position: relative;
-    top: 80%;
     width: 50px;
-    margin: 0 auto;
+    flex: 1;
 }
 
 .hero-info {
@@ -91,6 +112,7 @@ header nav ul li a {
 }
 .about p {
     flex: 4;
+    margin: 2.5% 0;
 }
 
 .interests {
@@ -100,11 +122,13 @@ header nav ul li a {
     justify-content: space-between;
 }
 .hero-info h2 {
-    width: 60%;
+    width: 90%;
     margin: 8px auto;
     text-align: center;
-    border-bottom: 2px solid #A3423C;
     color: black;
+    background: rgb(207, 182, 166);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .75);
 }
 
 
@@ -114,8 +138,7 @@ header nav ul li a {
     padding: 8px;
     min-width: 300px;
     display: flex;
-    background: rgba(255, 223, 203, .5);
-    border-radius: 30px;
+    
 }
 
 .interest-img{
@@ -129,3 +152,7 @@ header nav ul li a {
     text-align: left;
     padding: 0 20px;
 }
+.info-section {
+    width: 90%;
+}
+
