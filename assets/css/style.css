@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+
 }
 body {
     background-color: white;
@@ -26,7 +26,7 @@ header a {
     color: black;
 }
 header h1 {
-    border: 1px solid red;
+    padding: 0;
     flex: 1;
 }
 header nav {
@@ -37,7 +37,7 @@ header nav {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
 }
@@ -45,11 +45,8 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2vw;
 }
-
-
-
 .section-box {
     width: 100%;
     margin: 50px 0;
@@ -119,12 +116,15 @@ header nav ul li a {
     width: 90%;
     margin: 8px auto;
 }
+.contact ul {
+    list-style: none;
+}
 
 .interests {
     width: 90%;
     margin: auto;
 }
-.info-section h2 {
+.info-section h3 {
     margin: 8px auto;
     text-align: center;
     color: var(--tertiary-color);
@@ -142,7 +142,6 @@ header nav ul li a {
 }
 
 .interest-img {
-    max-width: 40px;
 }
 .interest-text {
     text-align: left;
@@ -158,6 +157,14 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     height: 500px;
+}
+.project-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .25);
 }
 .project-box {
     flex: 2;
@@ -180,20 +187,62 @@ header nav ul li a {
     background-image: url(../images/projectbackground1.png);
     height: 100%;
 }
-.project-title {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: rgba(255, 255, 255, .25);
+.project-1 {
+    /* Add background image*/
+    background-color: red;
 }
-.project-title h2 {
+.project-2 {
+    /* Add background image*/
+    background-color: blue;
+}
+.project-3 {
+    /* Add background image*/
+    background-color: green;
+}
+.project-4 {
+    /* Add background image*/
+    background-color: yellow;
+}
+.project-title h3 {
     color: black;
     padding: 8px;
     background-color: white;
 }
-
 .project-title:hover {
     background-color: rgba(255, 255, 255, .0);
+}
+
+
+.work-history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.company {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+}
+
+.company img {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+.job {
+    margin-left: 12px;
+}
+.position {
+    border-left: 2px solid black;
+}
+.job h4 {
+    margin-left: 12px;
+}
+.job h5 {
+    margin-left: 24px;
+}
+.job ul {
+    margin-left: 36px;
+    list-style-type: none;
 }
