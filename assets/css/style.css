@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #8dacab;
-    --secondary-color: #254e58;
-    --tertiary-color: #112d32;
+    --primary-color: #6992aa;
+    --secondary-color: #296a7a;
+    --tertiary-color: #111932;
     --quaternary-color: #6e6658;
 }
 * {
@@ -10,7 +10,7 @@
     padding: 0;
 }
 body {
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -28,6 +28,7 @@ header {
     top: 0;
     z-index: 9999;
     box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+    border: 3px solid var(--quaternary-color);
 }
 header a {
     text-decoration: none;
@@ -79,11 +80,11 @@ header nav ul li:hover {
     margin-left: 10%;
     position: relative;
     top: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    border-bottom: 3px solid var(--quaternary-color);
+    border: 1px solid var(--quaternary-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
 }
 .primary-section {
     border-radius: 10px;
@@ -91,6 +92,7 @@ header nav ul li:hover {
     padding: 5%;
     width: 90%;
     background-color: var(--primary-color);
+    border: 3px solid var(--quaternary-color);
     box-shadow: 0 0 15px rgba(0, 0, 0, .8);
 }
 
@@ -155,6 +157,7 @@ header nav ul li:hover {
     flex: 4;
     width: 90%;
     margin: 8px auto;
+    line-height: 1.25;
 }
 .contact ul {
     list-style: none;
@@ -200,6 +203,7 @@ header nav ul li:hover {
     justify-content: left;
     align-items: center;
     background-color: rgba(255, 255, 255, .25);
+    text-decoration: none;
 }
 .project-box {
     flex: 2;
@@ -208,10 +212,11 @@ header nav ul li:hover {
 }
 .project, .main-project {
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     display: flex;
     align-items: center;
     justify-content: left;
+    border: 2px solid var(--quaternary-color);
 }
 .project {
     width: 50%;
@@ -219,16 +224,14 @@ header nav ul li:hover {
 }
 .main-project {
     flex: 1;
-    background-image: url(../images/projectbackground1.png);
+    background-image: url(../images/mainproject.png);
     height: 100%;
 }
 .project-1 {
-    /* Add background image*/
-    background-color: red;
+    background-image: url(../images/project1.png);
 }
 .project-2 {
-    /* Add background image*/
-    background-color: blue;
+    background-image: url(../images/project2.png);
 }
 .project-3 {
     /* Add background image*/
@@ -236,7 +239,7 @@ header nav ul li:hover {
 }
 .project-4 {
     /* Add background image*/
-    background-color: yellow;
+    background-color: blue;
 }
 .project-title h3 {
     color: var(--primary-color);
@@ -273,15 +276,12 @@ header nav ul li:hover {
 .position {
     border-left: 1px solid var(--quaternary-color);
 }
-.job h4 {
+.job h4, .job h5 {
     margin-left: 12px;
-}
-.job h5 {
-    margin-left: 24px;
 }
 .job ul {
     margin-left: 36px;
-    list-style-type: none;
+    line-height: 1.25;
 }
 
 @media screen and (max-width: 768px) {
