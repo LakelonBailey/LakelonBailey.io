@@ -5,7 +5,7 @@
 * to display my professional and academic portfolio, as well as some insight into myself and my interests
 
 ## Website
-https://lakelonbailey.github.io/lakelonbailey
+https://lakelonbailey.github.io/lakelonbailey.io
 
 ## Built With 
 * HTML
