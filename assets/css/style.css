@@ -20,6 +20,8 @@ body {
 main {
     width: 90%;
 }
+
+/* Header Styling BEGIN */
 header {
     width: 10%;
     height: fit-content;
@@ -36,7 +38,6 @@ header a {
     color: var(--tertiary-color);
 }
 header h1 {
-    z-index: 100;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -46,11 +47,9 @@ header h1 {
     background-color: var(--secondary-color);
 }
 header nav {
-    width: 100%;
     background-color: var(--primary-color);
 }
 header nav ul {
-    z-index: 50;
     list-style: none;
     height: 100%;
 }
@@ -66,9 +65,11 @@ header nav ul li{
 }
 header nav ul li:hover {
     background-color: var(--quaternary-color);
-    box-shadow: 0 0 12px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 }
+/* Header Styling END */
 
+/* Recurring Styling BEGIN */
 .section-box {
     width: 100%;
     margin: 50px 0;
@@ -83,7 +84,7 @@ header nav ul li:hover {
     border-radius: 10px;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    border: 1px solid var(--quaternary-color);
+    border: 2px solid var(--quaternary-color);
     box-shadow: 0 0 5px rgba(0, 0, 0, .8);
 }
 .primary-section {
@@ -95,12 +96,30 @@ header nav ul li:hover {
     border: 3px solid var(--quaternary-color);
     box-shadow: 0 0 15px rgba(0, 0, 0, .8);
 }
+/* Recurring Styling END */
 
-.hero {
+/* GTKM Section Styling BEGIN */
+.gtkm {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     
+}
+.gtkm-title{
+    margin: 8px auto;
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    border-bottom: 2px solid var(--quaternary-color);
+}
+.info-section {
+    width: 95%;
+    margin: 12px 0;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--tertiary-color);
 }
 .contact {
     flex: 1;
@@ -109,7 +128,7 @@ header nav ul li:hover {
     justify-content: flex-end;
     max-width: 300px;
 }
-.hero-img {
+.gtkm-img {
     flex: 3;
     min-height: 300px;
     border-radius: 5px;
@@ -128,30 +147,17 @@ header nav ul li:hover {
     flex: 1;
     justify-content: center;
 }
-.hero-img img {
+.gtkm-img img {
     max-width: 50px;
     flex: 1;
 }
 
-.hero-info {
+.gtkm-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex: 2;
-}
-.info-section {
-    width: 95%;
-    margin: 12px 0;
-    padding: 8px 12px 12px 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #112d32;
-}
-.about {
-    display: flex;
-    flex-direction: column;
 }
 .about p {
     flex: 4;
@@ -167,15 +173,6 @@ header nav ul li:hover {
     width: 90%;
     margin: auto;
 }
-.gtkm-title{
-    margin: 8px auto;
-    font-size: 20px;
-    text-align: center;
-    width: 90%;
-    border-bottom: 2px solid var(--quaternary-color);
-}
-
-
 .interest {
     flex: 1;
     display: flex;
@@ -190,6 +187,9 @@ header nav ul li:hover {
     margin: 0 20px;
     color: var(--tertiary-color);
 }
+/* GTKM Section Styling END */
+
+/* Projects Section Styling BEGIN */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -234,11 +234,11 @@ header nav ul li:hover {
     background-image: url(../images/project2.png);
 }
 .project-3 {
-    /* Add background image*/
+    /* Empty Project Slot */
     background-color: green;
 }
 .project-4 {
-    /* Add background image*/
+    /* Empty Project Slot */
     background-color: blue;
 }
 .project-title h3 {
@@ -251,8 +251,9 @@ header nav ul li:hover {
 .project-title:hover {
     background-color: rgba(255, 255, 255, .0);
 }
+/* Projects Section Styling END */
 
-
+/* Work/Education Sections Styling BEGIN */
 .work-history {
     display: flex;
     flex-wrap: wrap;
@@ -268,6 +269,7 @@ header nav ul li:hover {
     width: 100px;
     height: 100px;
     background-color: white;
+    border: 3px solid var(--quaternary-color);
 }
 .job {
     color: var(--tertiary-color);
@@ -283,6 +285,7 @@ header nav ul li:hover {
     margin-left: 36px;
     line-height: 1.25;
 }
+/* Work/Education Sections Styling BEGIN */
 
 @media screen and (max-width: 768px) {
     body {
@@ -295,53 +298,52 @@ header nav ul li:hover {
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
-        height: fit-content;
-      }
-      header h1 {
-          flex: 1;
-          font-size: 4vw;
-      }
-      header nav {
-          flex: 3;
-      }
-      header nav ul {
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-      }
-      header nav ul li {
-          flex: 1;
-          font-size: 3.5vw;
+    }
+    header h1 {
+        flex: 1;
+        font-size: 4vw;
+    }
+    header nav {
+        flex: 3;
+    }
+    header nav ul {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    }
+    header nav ul li {
+        flex: 1;
+        font-size: 3.5vw;
 
-      }
-      main {
-          width: 100%;
-      }
-      .hero {
-          flex-direction: column;
-          align-items: center;
-      }
-      .primary-section {
-          width: 90%;
-          margin: 0 auto;
-      }
-      .contact {
-          flex-direction: row;
-          max-width: 100%;
-      }
-      .contact ul {
-          margin-left: 12px;
-      }
-      .hero-img {
-          flex: 1;
-      }
-      .section-title {
-          margin: 0 auto;
-      }
+    }
+    main {
+        width: 100%;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .primary-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact {
+        flex-direction: row;
+        max-width: 100%;
+    }
+    .contact ul {
+        margin-left: 12px;
+    }
+    .gtkm-img {
+        flex: 1;
+    }
+    .section-title {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 575px) {
