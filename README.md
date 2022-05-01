@@ -14,4 +14,7 @@ https://lakelonbailey.github.io/lakelonbailey
 ## Contributor(s) 
 * Lakelon Bailey
 
+## Template
+![image](./assets/images/mainproject.png)
+
 ### Est. April 2022
