@@ -237,8 +237,7 @@ header nav ul li:hover {
     background-image: url(../images/passgen.png);
 }
 .project-4 {
-    /* Empty Project Slot */
-    background-color: blue;
+    background-image: url(../images/code-quiz.png);
 }
 .project-title h3 {
     color: var(--primary-color);
