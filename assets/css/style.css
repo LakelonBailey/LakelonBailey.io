@@ -224,7 +224,7 @@ header nav ul li:hover {
 }
 .main-project {
     flex: 1;
-    background-image: url(../images/mainproject.png);
+    background-image: url(../images/simpleshopper.png);
     height: 100%;
 }
 .project-1 {
